@@ -38,14 +38,15 @@ h2 {
 }
 
 #welcome-title {
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 20px;
+  margin-left: 40px;
   color: #333;
 }
 
 #user-name {
   color:black;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 #subtitle {
