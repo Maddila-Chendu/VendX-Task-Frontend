@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './task.css';
+import '../../CSS/./task.css';
+
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -14,7 +15,7 @@ function Login() {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:8080/task/login', {
+      const response = await fetch('http://localhost:8080/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

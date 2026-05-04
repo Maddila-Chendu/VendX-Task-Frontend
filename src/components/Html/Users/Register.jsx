@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './task.css';
+import '../../CSS/./task.css';
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -31,7 +31,7 @@ function Register() {
     }
 
     try {
-      const response = await fetch('http://localhost:8080/task/register', {
+      const response = await fetch('http://localhost:8080/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
